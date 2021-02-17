@@ -9,10 +9,31 @@
 <body>
     <form>
         <label for ="username">Nombre de usuario</label>
-        <input type="text" value="" name="username" autocomplete="off">
+        <input type="text" value="" name="username" autocomplete="off" required>
         <br>
         <label for="pass">Contraseña</label>
-        <input type="password" name="pass">
+        <input type="password" name="pass" required>
+        <br>
+        <label for ="Country">Pais</label>
+        <select name="Country">            
+            <option value ="EU">Estados Unidos</option>
+            <option value ="CA">Canada</option>
+            <option value ="MX">Mexico</option>
+        </select>
+        <br>
+        <label for="Description">Descripcion</label>
+        <textarea name="Description" cols="5" rows="2"></textarea>
+        <br>
+        <label for="age">Descripcion</label>
+        <input type="number" name="age" min="0" max="100" step=".5">
+        <br>
+        <label for="email">Correo electrónico</label>
+        <input type="mail" name="email" autocomplete="off" placeholder="ejemplo@algo.com">
+        <br>
+        <label for="phone">Telefono</label>
+        <input type="tel" name="phone" autocomplete="off" placeholder="444-444-44444">
+        <br>
+        <button type="submit">Guardar</button>
     </form>
 </body>
 </html>
